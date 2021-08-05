@@ -61,9 +61,6 @@ if __name__ == "__main__":
                 if '#' in line:
                     line = createHeading(line)
                     htmlFile.write(line)
-                if '-' in line:
-                    line = createUl(line)
-                    htmlFile.write(line)
                 if '**' in line and line.count("**") % 2 == 0:
                     line = boldface(line)
                     htmlFile.write(line)
