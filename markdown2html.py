@@ -66,5 +66,7 @@ if __name__ == "__main__":
                     htmlFile.write(line)
                 if '**' in line and line.count("**") % 2 == 0:
                     line = boldface(line)
+                    htmlFile.write(line)
                 if '__' in line and line.count("__") % 2 == 0:
                     line = emphasis(line)
+                    htmlFile.write(line)
